@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'groksar.SAR_Det_Finegrained_Dataset' 
-data_root = 'datasets/SARDet_100K/'
+data_root = '/root/GrokSAR/datasets/SARDet-100K'
 
 # Example to use different file client
 # Method 1: simply set the data root and let the file I/O module
@@ -65,7 +65,7 @@ val_dataloader = dict(
 
 val_evaluator = dict(
     type='CocoMetric',
-    ann_file=data_root + 'Annotations/val.json',
+    ann_file=data_root + '/Annotations/val.json',
     # 是否展示每一个类别的 mAP
     classwise=False,
     metric='bbox',
