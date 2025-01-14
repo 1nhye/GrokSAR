@@ -4,6 +4,7 @@ import mmengine
 from mmengine.utils import digit_version
 
 from .version import __version__, version_info
+from .registry import MODELS  # MODELS 레지스트리 추가
 
 mmcv_minimum_version = '2.0.0rc4'
 mmcv_maximum_version = '2.1.0'
@@ -24,4 +25,4 @@ assert (mmengine_version >= digit_version(mmengine_minimum_version)
     f'Please install mmengine>={mmengine_minimum_version}, ' \
     f'<{mmengine_maximum_version}.'
 
-__all__ = ['__version__', 'version_info', 'digit_version']
+__all__ = ['__version__', 'version_info', 'digit_version', 'MODELS']

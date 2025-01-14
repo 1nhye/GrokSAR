@@ -430,6 +430,7 @@ class SElayer(nn.Module):
     
 @MODELS.register_module()
 class FrequencySpatialFPN(BaseModule):
+    print("FrequencySpatialFPN 등록 시도")
     r"""Feature Pyramid Network.
 
     This is an implementation of paper `Feature Pyramid Networks for Object
